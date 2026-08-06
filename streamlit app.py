@@ -1,14 +1,5 @@
 """
 DeepFER — Streamlit frontend
-
-Install first:
-    pip install streamlit tensorflow pillow numpy
-
-Run (NOTE: streamlit apps are run via the terminal, not python directly):
-    streamlit run streamlit_app.py
-
-This opens a local web page where you can upload a face photo and see
-the predicted emotion, confidence scores, and a bar chart.
 """
 
 import numpy as np
