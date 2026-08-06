@@ -8,7 +8,7 @@ from tensorflow.keras.models import load_model
 from PIL import Image
 
 # ---- CONFIG ----
-MODEL_PATH = "best_emotion_model.h5"
+MODEL_PATH = "deeplearning project/Emotion_detection_model.h5"
 IMG_SIZE = (48, 48)
 CLASSES = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
 
