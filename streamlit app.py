@@ -10,7 +10,7 @@ Run (NOTE: streamlit apps are run via the terminal, not python directly):
 This opens a local web page where you can upload a face photo and see
 the predicted emotion, confidence scores, and a bar chart.
 """
-pip install streamlit tensorflow pillow numpy
+
 import numpy as np
 import streamlit as st
 from tensorflow.keras.models import load_model
