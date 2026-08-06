@@ -17,7 +17,7 @@ BASE_DIR = Path(__file__).resolve().parent
 def get_model():
     return load_model(str(MODEL_PATH), compile=False)
 # ---- CONFIG ----
-MODEL_PATH = BASE_DIR / "deeplearning project" / "Emotion_detection_model.h5"
+MODEL_PATH = BASE_DIR / "Emotion_detection_model.h5"
 IMG_SIZE = (48, 48)
 CLASSES = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
 
