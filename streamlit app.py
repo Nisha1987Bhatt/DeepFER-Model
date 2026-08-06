@@ -6,9 +6,18 @@ import numpy as np
 import streamlit as st
 from tensorflow.keras.models import load_model
 from PIL import Image
+import os
+from pathlib import Path
 
+
+
+BASE_DIR = Path(__file__).resolve().parent
+
+@st.cache_resource
+def get_model():
+    return load_model(str(MODEL_PATH), compile=False)
 # ---- CONFIG ----
-MODEL_PATH = "deeplearning project/Emotion_detection_model.h5"
+MODEL_PATH = BASE_DIR / "deeplearning project" / "Emotion_detection_model.h5"
 IMG_SIZE = (48, 48)
 CLASSES = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
 
